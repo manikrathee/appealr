@@ -53,20 +53,6 @@
               var pageTracker = _gat._getTracker("UA-19400273-15");
             pageTracker._trackPageview();
             } catch(err) {}
-            
-            $(document).ready(function(){
-    $('a.photo').zoom({url: 'photo-big.jpg'});
-});
-
-// Using ColorBox with Zoom
-$(document).ready(function(){
-    $('a.photo').zoom({
-        url: 'photo-big.jpg', 
-        callback: function(){
-            $(this).colorbox({href: this.src});
-        }
-    });
-});
           </script>
 
   </body>
