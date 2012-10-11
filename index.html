@@ -28,10 +28,15 @@
         </ul>
       </header>
       <section>
-
-<img src="http://f.cl.ly/items/2y1R1O0h021N3R3c0U0U/Screen%20Shot%202012-10-10%20at%209.33.08%20PM.png" alt="appealr screenshot">
-<img src="http://f.cl.ly/items/2H3s1c1u1Y3u402i1p0o/Screen%20Shot%202012-10-10%20at%209.34.14%20PM.png" alt="appealr screenshot">
-<img src="http://f.cl.ly/items/2Y2N1524333P1q1o3M0v/Screen%20Shot%202012-10-10%20at%209.37.48%20PM.png" alt="appealr screenshot">
+      <a class="photo" href="http://f.cl.ly/items/2y1R1O0h021N3R3c0U0U/Screen%20Shot%202012-10-10%20at%209.33.08%20PM.png" title="Open Screenshot">
+        <img src="http://f.cl.ly/items/2y1R1O0h021N3R3c0U0U/Screen%20Shot%202012-10-10%20at%209.33.08%20PM.png" alt="appealr screenshot">
+      </a>
+      <a class="photo" href="http://f.cl.ly/items/2H3s1c1u1Y3u402i1p0o/Screen%20Shot%202012-10-10%20at%209.34.14%20PM.png" title="Open Screenshot">
+        <img src="http://f.cl.ly/items/2H3s1c1u1Y3u402i1p0o/Screen%20Shot%202012-10-10%20at%209.34.14%20PM.png" alt="appealr screenshot">
+      </a>
+      <a class="photo" href="http://f.cl.ly/items/2Y2N1524333P1q1o3M0v/Screen%20Shot%202012-10-10%20at%209.37.48%20PM.png" title="Open Screenshot">
+        <img src="http://f.cl.ly/items/2Y2N1524333P1q1o3M0v/Screen%20Shot%202012-10-10%20at%209.37.48%20PM.png" alt="appealr screenshot">
+      </a>
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/manikrathee">manikrathee</a></p>
@@ -48,6 +53,20 @@
               var pageTracker = _gat._getTracker("UA-19400273-15");
             pageTracker._trackPageview();
             } catch(err) {}
+            
+            $(document).ready(function(){
+    $('a.photo').zoom({url: 'photo-big.jpg'});
+});
+
+// Using ColorBox with Zoom
+$(document).ready(function(){
+    $('a.photo').zoom({
+        url: 'photo-big.jpg', 
+        callback: function(){
+            $(this).colorbox({href: this.src});
+        }
+    });
+});
           </script>
 
   </body>
