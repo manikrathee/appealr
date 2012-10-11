@@ -1,0 +1,44 @@
+/*! 1140GS Custom Framework - Built by Manik Rathee | @manikrathee | www.manikrathee.com */
+
+
+/*@import "import/reset";*/
+@import "import/normalize"; /* replaced reset */
+@import "import/1140";
+@import "import/core";
+@import "import/mixins";
+
+
+@import "styles/base";
+
+
+@media (max-width: 400px) {
+	@import "styles/mobile";
+}
+
+
+@media (min-width: 401px) {
+	@import "styles/tablet";
+}
+
+
+@media (min-width: 768px) {
+	@import "styles/small-desktop";
+}
+
+
+@media (min-width: 960px) {
+	@import "styles/desktop";
+}
+
+
+@media (min-width: 1200px) {
+	@import "styles/large-desktop";
+}
+
+
+.oldie{
+	@import "import/ie";
+	@import "styles/small-desktop";
+	@import "styles/desktop";
+	@import "styles/oldie";
+}
